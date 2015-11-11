@@ -17,11 +17,16 @@ This guide is for JavaScript only, and is intended to be a guide and not the bib
 ## Indentation and Whitespace
 - **Identation:** 2 spaces
 - **braces:** on same line for all blocks and functions
-  -  **none of the below:**
  ```
+ // do not do this
 function foo() 
 {
-  // do something
 }
-
+// and none of this
+for(var i=0; i < 10; i++)
+{
+}
+// correct
+function foo(){ // whitespace after  "()" is permitted but easier to leave out
+}
 ```
