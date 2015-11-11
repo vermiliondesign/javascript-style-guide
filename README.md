@@ -16,7 +16,7 @@ This guide is for JavaScript only, and is intended to be a guide and not the bib
 
 ## Indentation and Whitespace
 * **Identation:** 2 spaces
-* * **braces:** on same line for all blocks and functions
+* **braces:** on same line for all blocks and functions
  ```javascript
  // do not do this
 function foo() 
