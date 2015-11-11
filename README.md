@@ -45,3 +45,16 @@ function foo(){ // whitespace after  "()" is permitted but easier to leave out
  */
 function foo(bar) {...
 ```
+##### Do not do this
+
+```
+// this is not
+// a single line 
+// comment
+```
+##### Do not add todos unless you get rid of them in production files
+ 
+```javascsript
+// todo: make this function work
+function foo() {}...
+```
