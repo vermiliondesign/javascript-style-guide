@@ -5,6 +5,7 @@ This guide is for JavaScript only, and is intended to be a guide and not the bib
 ##### Here is a break down of what this guide contains.
 
 * indentation and whitespace
+* comments
 * file naming
 * variables
 * arrays
@@ -12,3 +13,15 @@ This guide is for JavaScript only, and is intended to be a guide and not the bib
 * declaring functions, methods 
 * working with classes and prototypes
 * recursion
+
+## Indentation and Whitespace
+- **Identation:** 2 spaces
+- **braces:** on same line for all blocks and functions
+  -  **none of the below:**
+ ```
+function foo() 
+{
+  // do something
+}
+
+```
