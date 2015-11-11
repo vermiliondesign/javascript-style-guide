@@ -104,5 +104,5 @@ Do not use global variables unless absolutely necessary. Here are some occassion
 * You are using a 3rd party API that requires global variables to be defined as settings
 
 ###### An alternative to global variables
-* Create a namespace for theme
+* Create a namespace
   * **Example:** `MyApp.foo = 'bar';` "foo" doesn't need to be global but is accessible through your global namespace of "MyApp".
