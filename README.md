@@ -36,7 +36,7 @@ function foo(){ // whitespace after  "()" is permitted but easier to leave out
 * single: `// text here`
 * multiline `/* text here.. */`
 * DocBlock ↓
-```
+```javascript
 /*
  * function description...
  *
