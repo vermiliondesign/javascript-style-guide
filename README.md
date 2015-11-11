@@ -32,6 +32,19 @@ for(var i=0; i < 10; i++)
 function foo(){ // whitespace after  "()" is permitted but easier to leave out
 }
 ```
+### jQuery Specific
+With jQuery, many methods can be chained. You should use hard returns and indent when method chaining is used. This keeps line lengths to a minumum making code easier to read.
+```javascript
+// bad
+$('.my-module').css('color', 'red').height(200).width(200).show();
+
+// good
+$('.my-module')
+    .css('color', 'red')
+    .height(200)
+    .width(200)
+    .show();
+```
 
 ## Comments
 * single: `// text here`
@@ -71,3 +84,4 @@ function foo() {}...
 ##### Class files
 * **source:** MyClass.js
 * **source:** MyClass.min.js
+
