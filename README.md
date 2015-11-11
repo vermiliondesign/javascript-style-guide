@@ -83,5 +83,5 @@ function foo() {}...
 
 ##### class files
 * **source:** MyClass.js
-* **source:** MyClass.min.js
+* **minified:** MyClass.min.js
 
