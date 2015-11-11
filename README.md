@@ -32,3 +32,16 @@ for(var i=0; i < 10; i++)
 function foo(){ // whitespace after  "()" is permitted but easier to leave out
 }
 ```
+## Comments
+* single: `// text here`
+* multiline `/* text here.. */`
+* DocBlock ↓
+```
+/*
+ * function description...
+ *
+ * @param {string} this param takes a string
+ * @return {string} this returns a string
+ */
+function foo(bar) {...
+```
