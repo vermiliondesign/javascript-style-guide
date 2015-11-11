@@ -85,3 +85,24 @@ function foo() {}...
 * **source:** MyClass.js
 * **minified:** MyClass.min.js
 
+## Variables
+##### Assignment
+* Always use `var` to avoid global assignment.
+* Assign at the top of blocks if the variable(s) is used more than once throughout
+```javascript
+function foo(myvar) {
+    // assign vars here
+    var bar = null;
+    if(myvar) {
+        bar = myvar + ' test';
+    }
+    ...
+}
+```
+##### Global variables
+Do not use global variables unless absolutely necessary. Here are some occassions you might use them:
+* You are using a 3rd party API that requires global variables to be defined as settings
+
+###### An alternative to global variables
+* Create a namespace for theme
+  * **Example:** `MyApp.foo = 'bar';` "foo" doesn't need to be global but is accessible through your global namespace of "MyApp".
