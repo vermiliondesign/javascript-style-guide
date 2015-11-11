@@ -41,8 +41,8 @@ function foo(){ // whitespace after  "()" is permitted but easier to leave out
 /*
  * function description...
  *
- * @param {string} this param takes a string
- * @return {string} this returns a string
+ * @param {string} bar This param takes a string.
+ * @return {string} This returns a string.
  */
 function foo(bar) {...
 ```
