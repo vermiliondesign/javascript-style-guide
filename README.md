@@ -22,10 +22,12 @@ This guide is for JavaScript only, and is intended to be a guide and not the bib
 function foo() 
 {
 }
+
 // and none of this
 for(var i=0; i < 10; i++)
 {
 }
+
 // correct
 function foo(){ // whitespace after  "()" is permitted but easier to leave out
 }
