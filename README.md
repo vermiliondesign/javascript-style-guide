@@ -81,7 +81,7 @@ function foo() {}...
 * **source:** name-x.x.plugin.js
 * **minified:** name-x.x.plugin.min.js
 
-##### Class files
+##### class files
 * **source:** MyClass.js
 * **source:** MyClass.min.js
 
