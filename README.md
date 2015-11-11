@@ -32,6 +32,7 @@ for(var i=0; i < 10; i++)
 function foo(){ // whitespace after  "()" is permitted but easier to leave out
 }
 ```
+
 ## Comments
 * single: `// text here`
 * multiline `/* text here.. */`
