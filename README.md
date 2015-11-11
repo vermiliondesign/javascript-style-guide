@@ -4,7 +4,7 @@ This guide is for JavaScript only, and is intended to be a guide and not the bib
 
 ##### Here is a break down of what this guide contains.
 
-* indentation and whitespace
+* whitespace and indentation
 * comments
 * file naming
 * variables
@@ -14,9 +14,10 @@ This guide is for JavaScript only, and is intended to be a guide and not the bib
 * working with classes and prototypes
 * recursion
 
-## Indentation and Whitespace
-* **Identation:** 2 spaces
+## Whitespace and Indentation
+* **operators:** use a space between each, e.g. `var b = 4 + 4 / 2;`
 * **braces:** on same line for all blocks and functions
+*  **Identation:** 2 spaces
  ```javascript
  // do not do this
 function foo() 
