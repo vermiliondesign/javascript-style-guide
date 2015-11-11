@@ -59,3 +59,15 @@ function foo(bar) {...
 // todo: make this function work
 function foo() {}...
 ```
+## File naming
+##### general script files
+* **source:** myfile.js
+* **minified:** myfile.min.js
+
+##### plugin files
+* **source:** name-x.x.plugin.js
+* **minified:** name-x.x.plugin.min.js
+
+##### Class files
+* **source:** MyClass.js
+* **source:** MyClass.min.js
