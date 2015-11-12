@@ -19,6 +19,7 @@ This guide is for JavaScript only, and is intended to be a guide and not the bib
 * **braces:** on same line for all blocks and functions
 * **indentation:** 2 spaces
 
+##### Dos and dont's
  ```javascript
  // do not do this
 function foo() 
