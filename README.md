@@ -128,3 +128,20 @@ Do not use global variables unless absolutely necessary. Here are some occassion
  var c = 2;
  var d = 3;
 ```
+##### Variable naming
+Use snake case (e.g. `"my_var"`) to name variables that contain primitives. 
+
+**The below are primitives:**
+ * string 
+ * number
+ * boolean
+ * null
+ * undefined
+
+**Functions, objects and classes should be treated differently.**
+
+* use camel case for naming variables that reference objects: `var myVar = {};`
+* same for functions: `var myFunc = function() {};`
+* use upper camel case for class names: `var MyClass = function() {}...;`
+* use "$" before variables that reference jQuery objects: `var $myFoo = $('.my-foo');`
+* Class/object properties should reflect most of the latter but more about that in another section.
