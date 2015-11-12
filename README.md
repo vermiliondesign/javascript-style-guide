@@ -108,3 +108,22 @@ Do not use global variables unless absolutely necessary. Here are some occassion
 ###### An alternative to global variables
 * Create a namespace
   * **Example:** `MyApp.foo = 'bar';` "foo" doesn't need to be global but is accessible through your global namespace of "MyApp".
+##### Constants
+* ES6 way: `const foo = 'bar';`
+* fallback: `var FOO = 'bar';` use caps to indicate this is a constant
+
+##### Dos and dont's
+```javascript
+ // bad
+ var b = 1, c = 2, d = 3;
+ 
+ // also bad
+ var b = 1,
+ c = 2,
+ d = 3;
+ 
+ // good
+ var b = 1;
+ var c = 2;
+ var d = 3;
+```
