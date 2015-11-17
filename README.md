@@ -11,7 +11,7 @@ This guide is for JavaScript only, and is intended to be a guide and not the bib
 * variables
 * arrays
 * objects
-* declaring functions, methods 
+* functions and methods 
 * working with classes and prototypes
 * recursion
 
