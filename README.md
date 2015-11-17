@@ -174,7 +174,7 @@ var myObject = {};
 myObject.foo = 'bar';
 ```
 ##### Setting properties
-For object properties, follow the same naming conventions as variables.
+For object properties, follow the same naming conventions of variables.
 ```javascript
 // set initial values or defaults like this
 var myObject.foo = {
