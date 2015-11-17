@@ -194,7 +194,7 @@ $.ajax({
 
 ## Objects
 
-##### Declaring objects:
+##### Declaring objects
 ```javascript
 // do not do this
 var myObject = new Object();
