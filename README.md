@@ -5,6 +5,7 @@ This guide is for JavaScript only, and is intended to be a guide and not the bib
 ##### Here is a break down of what this guide contains.
 
 * whitespace and indentation
+* quotes, semicolons, etc.
 * comments
 * file naming
 * variables
@@ -35,7 +36,7 @@ for(var i=0; i < 10; i++)
 function foo(){ // whitespace after  "()" is permitted but easier to leave out
 }
 ```
-### jQuery Specific
+#### jQuery Specific
 With jQuery, many methods can be chained. You should use hard returns and indent when method chaining is used. This keeps line lengths to a minumum making code easier to read.
 ```javascript
 // bad
@@ -48,6 +49,38 @@ $('.my-module')
     .width(200)
     .show();
 ```
+## quotes, semicolons, etc.
+Use single quotes for pretty much everything.
+```javascript
+// good
+var foo = 'bar';
+
+// bad
+var foo = "bar";
+
+// good
+var $object = $('input[name="foo"]');
+
+// bad
+var $object = $("input[name=\"foo\"]");
+
+// do not mix styles
+
+var my_var = 'my';
+var long_string = 'hello ' + my_var + " friend";
+
+// be consistent
+
+var my_var = 'my';
+var long_string = 'hello ' + my_var + ' friend';
+```
+#### semicolons
+ * `var foo = 'bar';` <--
+ * `var foo = function() {};` <--
+ * -->`;(function(){})();` before (optional)
+ 
+Using a linter to find missing semicolons is recommended.
+
 
 ## Comments
 * single: `// text here`
