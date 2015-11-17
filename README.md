@@ -155,7 +155,7 @@ $.ajax({
     url: 'http://api.foo.com',
     data: { 
         my_object: { foo: 'bar'} 
-        // the API expects "my_object" even though this style guide requires the format of myObject.
+        // the API expects "my_object" even though this style guide requires the format of "myObject".
     }
 });
 ```
