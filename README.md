@@ -52,6 +52,7 @@ $('.my-module')
 ## quotes, semicolons, etc.
 Use single quotes for pretty much everything.
 ```javascript
+
 // good
 var foo = 'bar';
 
@@ -65,12 +66,10 @@ var $object = $('input[name="foo"]');
 var $object = $("input[name=\"foo\"]");
 
 // do not mix styles
-
 var my_var = 'my';
 var long_string = 'hello ' + my_var + " friend";
 
 // be consistent
-
 var my_var = 'my';
 var long_string = 'hello ' + my_var + ' friend';
 ```
