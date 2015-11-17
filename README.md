@@ -146,3 +146,43 @@ Use snake case (e.g. `"my_var"`) to name variables that contain primitives.
 * use upper camel case for class names: `var MyClass = function() {};`
 * use "$" before variables that reference jQuery objects: `var $myFoo = $('.my-foo');`
 * Class/object properties should reflect most of the latter but more about that in another section.
+
+**Exceptions**
+
+If your code works with an API or some 3rd party script, make sure to consult documentation on naming conventions for variable names. Same goes with properties.
+```javascript
+$.ajax({
+    url: 'http://api.foo.com',
+    data: { 
+        my_object: { foo: 'bar'} 
+        // the API expects "my_object" even though this style guide requires the format of myObject.
+    }
+});
+```
+
+## Objects
+
+##### Declaring objects:
+```javascript
+// do not do this
+var myObject = new Object();
+myObject.foo = 'bar';
+
+// declare objects this way
+var myObject = {};
+// it's much simpler
+myObject.foo = 'bar';
+```
+##### Setting properties
+For object properties, follow the same naming conventions as variables.
+```javascript
+// set initial values or defaults like this
+var myObject.foo = {
+    foo: null,
+    myData: {},
+    test: 1234
+};
+// set properties later on like this
+myObject.foo = 'bar';
+myObject.myData.foo2 = 'bar2';
+```
