@@ -228,11 +228,11 @@ Functions/methods should serve the purpose of accepting input, doing some work, 
 ##### Defining functions
 Do not define functions globally. This means you must use a namespace.
 ```javascript
-// bad (becomes a global functions)
+// bad (becomes a global function)
 var my_function = function(a) { 
     return a + ' bar'; 
 };
-// also bad (becomes a global functions)
+// also bad (becomes a global function)
 window.my_function = function(a) { 
     return a + ' bar'; 
 };
