@@ -173,6 +173,7 @@ Use snake case (e.g. `"my_var"`) to name variables that contain primitives.
 
 **Functions, objects and classes should be treated differently.**
 
+* be explicit about the variable by giving it a name that describes its purpose (e.g. `var is_resolved = null; var number_of_items = 5;`)
 * use camel case for naming variables that reference objects: `var myVar = {};`
 * same for functions: `var myFunc = function() {};`
 * use upper camel case for class names: `var MyClass = function() {};`
@@ -218,3 +219,6 @@ var myObject.foo = {
 myObject.foo = 'bar';
 myObject.myData.foo2 = 'bar2';
 ```
+## functions and methods 
+Like variables, function and method names should be explicit about what they do and at the same time be simple enough where the name of the function/method does not take up a whole line.
+Functions/methods should serve the purpose of accepting input, doing some work, and then outputting through a return statement. If it does not return, it should do some property manipulation on the object if it is a method. Lastly, it is acceptable to not return a value if it is asynchronous like timeouts, DOM events, or AJAX calls.
