@@ -245,7 +245,12 @@ $(function() {
 
 // better, but a mess because it lacks organization
 $(function() {
- // The function is defined within this scope and is not acessible by anything outside. This is fine if you want this function to be private. More on that later.
+ /* 
+  The function is defined within this scope 
+  and is not acessible by anything outside. 
+  This is fine if you want this function to be private. 
+  More on that later.
+  */
   var my_function = function(a) { 
     return a + ' bar'; 
   };
