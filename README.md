@@ -11,7 +11,9 @@ This guide is for JavaScript only, and is intended to be a guide and not the bib
 * variables
 * arrays
 * objects
-* functions and methods 
+* functions
+* namespaces
+* methods
 * working with classes and prototypes
 * recursion
 
@@ -219,6 +221,33 @@ var myObject.foo = {
 myObject.foo = 'bar';
 myObject.myData.foo2 = 'bar2';
 ```
-## functions and methods 
+## functions
 Like variables, function and method names should be explicit about what they do and at the same time be simple enough where the name of the function/method does not take up a whole line.
 Functions/methods should serve the purpose of accepting input, doing some work, and then outputting through a return statement. If it does not return, it should do some property manipulation on the object if it is a method. Lastly, it is acceptable to not return a value if it is asynchronous like timeouts, DOM events, or AJAX calls.
+
+##### Defining functions
+Do not define functions globally. This means you must use a namespace.
+```javascript
+// bad (becomes a global functions)
+var my_function = function(a) { 
+    return a + ' bar'; 
+};
+// also bad (becomes a global functions)
+window.my_function = function(a) { 
+    return a + ' bar'; 
+};
+// bad! it is stil global because there is no "var" before the function name.
+$(function() {
+  my_function = function(a) { 
+    return a + ' bar'; 
+  };
+});
+
+// better, but a mess because it lacks organization
+$(function() {
+ // The function is defined within this scope and is not acessible by anything outside. This is fine if you want this function to be private. More on that later.
+  var my_function = function(a) { 
+    return a + ' bar'; 
+  };
+});
+```
